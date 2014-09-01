@@ -1,3 +1,8 @@
+/* stm32f407vgt6 ile yapilmis adc library
+   hem dısardan baglanan bir adc okumak icin
+   ve hemde islemciye gömülmüs sıcaklık sensöro okumak ıcın hazırlanmıstır.
+   */
+
 extern void adc_setup(){
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC2, ENABLE); // adc1 kanalý clock aktif edildi
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);// adc kanal okumasý için pin clock aktif edildi
